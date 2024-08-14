@@ -1,3 +1,4 @@
+// Time complexity: O(N + M)
 export function longestCommonPrefix(strs: string[]): string {
     if (!strs.length) {
         return '';

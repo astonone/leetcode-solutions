@@ -1,3 +1,4 @@
+// Time complexity: O(N + M)
 export function romanToInt(s: string): number {
     const romanToIntMap = new Map();
     romanToIntMap.set('I', 1);
