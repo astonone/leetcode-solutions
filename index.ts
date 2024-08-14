@@ -1,6 +1,6 @@
-import {isPalindrome} from "./tasks/palindromeNumber/PalindromeNumber";
+import {romanToInt} from "./tasks/romanToInteger/romanToInteger";
 
-console.log(isPalindrome(100));
+console.log(romanToInt('MCMXCIV'));
 
 
 
