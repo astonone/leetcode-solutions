@@ -1,4 +1,4 @@
-import {isPalindrome} from "./palindromeNumber";
+import {isPalindrome, isPalindromeSimple} from "./palindromeNumber";
 
 
 describe('Palindrome Number', () => {
@@ -13,5 +13,17 @@ describe('Palindrome Number', () => {
 
     it('should pass test case 3', () => {
         expect(isPalindrome(10)).toEqual(false);
+    });
+
+    it('should pass test case 1 with simpleSolution', () => {
+        expect(isPalindromeSimple(121)).toEqual(true);
+    });
+
+    it('should pass test case 2 with simpleSolution', () => {
+        expect(isPalindromeSimple(-121)).toEqual(false);
+    });
+
+    it('should pass test case 3 with simpleSolution', () => {
+        expect(isPalindromeSimple(10)).toEqual(false);
     });
 });
