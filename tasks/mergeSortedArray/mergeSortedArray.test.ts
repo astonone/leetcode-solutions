@@ -34,4 +34,11 @@ describe('Merge Sorted Array', () => {
         expect(num2).toEqual([-1, -1, 0, 0, 1, 2]);
     });
 
+    it('should pass test case 5', () => {
+        const num1 = [0, 0, 0, 0, 0];
+        const num2 = [1, 2, 3, 4, 5];
+        merge(num1, 0, num2, 5);
+        expect(num1).toEqual([1, 2, 3, 4, 5]);
+        expect(num2).toEqual([1, 2, 3, 4, 5]);
+    });
 });
