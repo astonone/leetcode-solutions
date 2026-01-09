@@ -1,6 +1,6 @@
 export class MyStack {
-    queue1: MyQueue<number>;
-    queue2: MyQueue<number>;
+    private queue1: MyQueue<number>;
+    private queue2: MyQueue<number>;
 
     constructor() {
         this.queue1 = new MyQueue<number>();
@@ -45,7 +45,7 @@ export class MyStack {
 }
 
 class MyQueue<T> {
-    private queArray: T[];
+    private readonly queArray: T[];
     private front: number;
     private rear: number;
     private nItems: number;
